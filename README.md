@@ -174,12 +174,25 @@ Whirring            Wibbling            Wizarding           Working             
 <a name="quick-start"></a>
 ## Quick Start
 
-> [!CAUTION]
+### 1. Prerequisites
+- **Modern Browser**: Required for running the technical simulator (ES6 support).
+- **Claude Code CLI**: The official tool for implementing custom state indicators.
+
+> [!WARNING]
 > ### Backup Configuration
 > Before running any scripts, make sure to back up your `settings.json` file. Changing your configuration is permanent, and you will need a backup to 'restore' your original settings if needed.
 
-### 1. Automation Pipeline (Verified)
-Execute the provided shell scripts to inject selected thematic indices into your local Claude Code configuration.
+### 2. Implementation Workflow
+
+#### Step 1: Repository Acquisition
+Initialize the local environment by cloning the primary registry repository:
+```bash
+git clone https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS.git
+cd CLAUDE-SPINNER-WORDS
+```
+
+#### Step 2: Theme Implementation
+Execute the provided shell scripts to inject your selected thematic index:
 
 **Windows (PowerShell):**
 ```powershell
@@ -190,6 +203,10 @@ Execute the provided shell scripts to inject selected thematic indices into your
 ```bash
 ./scripts/apply.sh ./themes/cyber-punk.json
 ```
+
+#### Step 3: Workstation Initialization
+After implementation, you can verify the visual cadence via the simulator:
+`Source Code/index.html`
 
 ---
 
