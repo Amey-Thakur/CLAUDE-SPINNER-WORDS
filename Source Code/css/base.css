@@ -62,7 +62,7 @@ body {
     justify-items: center; align-items: center;
     padding: 60px;
     font-size: clamp(10px, 1.5vh, 18px);
-    color: rgba(244, 243, 238, 0.04);
+    color: rgba(244, 243, 238, 0.015);
     pointer-events: none;
     z-index: 0;
 }
