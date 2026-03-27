@@ -1,0 +1,9 @@
+{
+  "theme": "Hacker-Manifesto",
+  "description": "High-intensity technical state indicators inspired by early-internet and cyberpunk hacker hacker culture.",
+  "verbs": [
+    "Breaching", "Infiltrating", "Cracking", "Exploiting", "Sniffing", "Tracing",
+    "Bypassing", "Zero-Day-Hunting", "Exfiltrating", "Proxying", "Tunneling",
+    "Brute-Forcing", "Enumerating", "Fingerprinting", "Scrambling"
+  ]
+}

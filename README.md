@@ -250,7 +250,7 @@ I was intrigued by how Claude 'thinks' and the unique words it uses while workin
 
 **Key Contributions:**
 - **Official Registry (90 Verbs)**: I audited and documented the original 90 words directly from the Claude Code CLI.
-- **12+ Specialized Themes**: I created diverse collections like 'Cyber-Punk', 'Steampunk', and 'Scholarly'.
+- **20+ Specialized Themes**: I created diverse collections like 'Cyber-Punk', 'Startup-Hustle', 'AI-Philosophy', 'Hacker-Manifesto', 'Existential-Dread', and 'Zen-Garden'.
 - **100+ New Custom Words**: I added original, themed words throughout the library to help you personalize your environment.
 - **Community-Driven**: I added a [Contributing Guide](CONTRIBUTING.md) so others can help expand the theme collection!
 

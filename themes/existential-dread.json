@@ -1,0 +1,9 @@
+{
+  "theme": "Existential-Dread",
+  "description": "Humorous and slightly dark state indicators for the developer who has spent too many hours debugging.",
+  "verbs": [
+    "Screaming", "Wishing", "Hoping", "Crying", "Giving-Up", "Starting-Over",
+    "Bikeshedding", "Rubber-Ducking", "Legacy-Code-Reading", "Impatience-Leveling",
+    "Burnout-Managing", "Coffee-Consuming", "Existential-Crisis", "Quiet-Quitting"
+  ]
+}
