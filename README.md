@@ -174,6 +174,10 @@ Whirring            Wibbling            Wizarding           Working             
 <a name="quick-start"></a>
 ## Quick Start
 
+> [!CAUTION]
+> ### Backup Configuration
+> Before running any scripts, make sure to back up your `settings.json` file. Changing your configuration is permanent, and you will need a backup to 'restore' your original settings if needed.
+
 ### 1. Automation Pipeline (Verified)
 Execute the provided shell scripts to inject selected thematic indices into your local Claude Code configuration.
 
