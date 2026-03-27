@@ -1,0 +1,12 @@
+{
+  "theme": "Scholarly",
+  "description": "High-fidelity academic state indicators for research-grade workstation environments.",
+  "verbs": [
+    "Abstracting", "Analyzing", "Cataloging", "Categorizing", "Citing", "Classifying",
+    "Conceptualizing", "Contextualizing", "Critiquing", "Deduce", "Demonstrating", "Describing",
+    "Empiricizing", "Evaluating", "Hypothesizing", "Interpreting", "Investigating", "Metastasizing",
+    "Methodologizing", "Modeling", "Narrating", "Objectifying", "Ontologizing", "Paradigmatizing",
+    "Phenomenologizing", "Postulating", "Problematizing", "Rationalizing", "Recontextualizing",
+    "Referencing", "Schema-Tizing", "Standardizing", "Systematizing", "Theorizing", "Validating"
+  ]
+}

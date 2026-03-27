@@ -229,7 +229,12 @@ Use this project to study the **'stochastic signaling'** and technical cadence o
 
 **Created & Maintained by**: [Amey Thakur](https://github.com/Amey-Thakur)
 
-I was intrigued by how Claude 'thinks' and the unique words it uses while working. I wanted to personalize my own environment, but because I couldn't find any existing public registry or simulator, I built this repository. It serves as a simple, high-fidelity hub for exploring and implementing these indicators.
+I was intrigued by how Claude 'thinks' and the unique words it uses while working. I wanted to personalize my own environment, but because I couldn't find any existing public registry or simulator, I built this repository.
+
+**Key Contributions:**
+- **The Official 90**: I audited and documented the original 90 words from the CLI.
+- **Custom Themes**: I created new collections like 'Cyber-Punk', 'Sci-Fi', 'Cryptographic', 'Minimalist', and 'Scholarly'.
+- **New Words**: I added extra words to the themes to make the technical environment even more personalized.
 
 **Connect:** [GitHub](https://github.com/Amey-Thakur) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/amey-thakur) &nbsp;·&nbsp; [ORCID](https://orcid.org/0000-0001-5644-1575)
 

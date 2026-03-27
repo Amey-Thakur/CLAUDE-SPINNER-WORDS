@@ -1,0 +1,9 @@
+{
+  "theme": "Cryptographic",
+  "description": "High-security state indicators with a focus on cryptographic operations and entropy generation.",
+  "verbs": [
+    "Decrypting", "Encrypting", "Hasing", "Hashing", "Salting", "Rotating",
+    "Validating", "Signing", "Verifying", "Chaining", "Sealing", "Vaulting",
+    "Injecting", "Padding", "Scrambling", "Transposing", "Permuting"
+  ]
+}
