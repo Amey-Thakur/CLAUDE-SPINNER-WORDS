@@ -5,7 +5,7 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
   ![Status](https://img.shields.io/badge/Status-Completed-success)
-  [![Technology](https://img.shields.io/badge/Technology-Vanilla%20JS%20%7C%20CSS3-blue)](https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS)
+  [![Technology](https://img.shields.io/badge/Technology-Vanilla%20JS%20%7C%20CSS3-blueviolet)](https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS)
   [![Developed by Amey Thakur](https://img.shields.io/badge/Developed%20by-Amey%20Thakur-blue.svg)](https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS)
 
   Autonomous technical registry and workstation simulator for the Claude Code CLI state indicator mechanism.
