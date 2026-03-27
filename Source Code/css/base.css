@@ -47,6 +47,30 @@ body {
     position: relative;
     padding: 10vh 40px;
     -webkit-font-smoothing: antialiased;
+    
+    /* Custom Scrollbar for modern browsers */
+    scrollbar-color: rgba(255, 255, 255, 0.1) var(--bg-color);
+    scrollbar-width: thin;
+}
+
+/* Webkit scrollbar customization to match the theme */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 768px) {

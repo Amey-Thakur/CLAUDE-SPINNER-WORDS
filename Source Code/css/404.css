@@ -2,8 +2,9 @@
  * Global Overrides for 404 Technical Fallback
  */
 html, body {
-    height: 100%;
-    overflow: hidden !important; /* Enforce non-scrollable state */
+    min-height: 100%;
+    overflow-x: hidden !important; /* Prevent horizontal scroll */
+    overflow-y: auto !important; /* Allow vertical scroll only if needed */
 }
 
 body {
@@ -94,51 +95,75 @@ body {
 }
 @media (max-width: 480px) {
     body {
-        padding: 2vh 15px !important;
+        padding: 1.5vh 15px !important; /* Extremely tight for fitting */
     }
     
     .main-wrapper {
         width: 100% !important;
-        gap: 1.5vh;
-    }
-
-    .header-branding {
-        gap: 15px;
-        margin-bottom: 1.5vh;
-    }
-
-    .branding-logo {
-        width: 60px;
-        height: 60px;
-    }
-
-    .terminal-404-body {
-        padding: 15px;
         gap: 1vh;
     }
 
-    .ascii-404 {
-        font-size: 8px; /* Force small to fit */
-        margin-bottom: 1.5vh;
-    }
-
-    .terminal-log {
-        font-size: 14px; /* Scaled down for mobile */
+    .header-branding {
+        gap: 10px;
         margin-bottom: 1vh;
     }
 
+    .branding-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .terminal-404-body {
+        padding: 12px;
+        gap: 0.8vh;
+    }
+
+    .ascii-404 {
+        font-size: 6px; /* Reduced further */
+        margin-bottom: 1vh;
+    }
+
+    .terminal-log {
+        font-size: 11px; /* Small enough for 1 line */
+        margin-bottom: 0.8vh;
+        white-space: nowrap;
+    }
+
+    .log-entry {
+        margin-bottom: 0.3vh;
+    }
+
     .simulation-container-404 {
-        padding: 10px 15px;
-        gap: 15px;
+        padding: 5px 12px;
+        gap: 12px;
         width: 100%;
-        justify-content: flex-start;
+        margin: 0.2vh 0;
+    }
+
+    .claude-spinner-root {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .verb-text, .dots {
+        font-size: 14px !important;
+    }
+
+    .cursor {
+        height: 14px !important;
     }
 
     .recovery-btn {
-        padding: 10px 20px;
-        font-size: 16px;
-        margin-top: 1vh;
+        padding: 8px 15px;
+        font-size: 14px;
+        margin-top: 0.8vh;
         width: 100%;
         text-align: center;
+    }
+
+    footer {
+        margin-top: auto;
+        padding-bottom: 1vh;
+        font-size: 12px;
     }
 }
