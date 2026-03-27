@@ -12,6 +12,7 @@
  * Symmetrical architecture for the high-fidelity Claude simulator.
  * Synchronizes header and terminal widths for peak visual stability.
  * Features grand-scale typography and intensified technical spacing.
+ * Optimized for cross-platform responsiveness and mobile fidelity.
  */
 
 :root {
@@ -45,6 +46,7 @@ body {
     position: relative;
     padding: 2vh 40px;
     -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
 }
 
 /* Symmetrical Wrapper Architecture */
@@ -356,4 +358,97 @@ footer a {
     background: radial-gradient(circle, rgba(217, 119, 87, 0.05) 0%, transparent 70%);
     transform: translate(-50%, -50%);
     z-index: 2;
+}
+
+/* --- Responsive Architecture --- */
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 15px;
+        overflow-y: auto;
+    }
+
+    .main-wrapper {
+        gap: 2.5vh;
+    }
+
+    .header-branding {
+        gap: 20px;
+        margin-bottom: 1vh;
+    }
+
+    .repo-title {
+        letter-spacing: -1.5px;
+    }
+
+    .tagline {
+        letter-spacing: 4px;
+        font-size: 12px;
+    }
+
+    .terminal-header {
+        padding: 12px 18px;
+    }
+
+    .terminal-body {
+        padding: 25px 20px;
+        gap: 2vh;
+    }
+
+    .simulation-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 2.5vh 15px;
+    }
+
+    .claude-spinner-root {
+        width: 65px;
+        height: 65px;
+    }
+
+    .control-hub {
+        margin-top: 10px;
+    }
+
+    .control-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    /* Error button spans full width on mobile for visual balance */
+    #btn-error {
+        grid-column: span 2;
+    }
+
+    .event-log-container {
+        margin-top: 15px;
+    }
+
+    footer {
+        margin-top: 4vh;
+        margin-bottom: 2vh;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .repo-title {
+        font-size: 38px;
+    }
+
+    .verb-text, .dots {
+        font-size: 32px;
+    }
+
+    .cursor {
+        height: 32px;
+    }
+
+    .control-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #btn-error {
+        grid-column: span 1;
+    }
 }
