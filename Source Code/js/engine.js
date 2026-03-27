@@ -25,6 +25,10 @@ class ClaudeTypewriterEngine {
         this.holdDuration = config.holdDuration || 2000; 
         
         this.isActive = false;
+        
+        // Randomization State
+        this.shuffledVerbs = [];
+        this.currentIndex = -1;
     }
 
     init() {
@@ -35,6 +39,39 @@ class ClaudeTypewriterEngine {
 
     delay(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    /**
+     * Fisher-Yates Shuffle implementation
+     */
+    shuffleArray(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
+    getNextVerb() {
+        if (typeof CLAUDE_VERBS === 'undefined') return 'Thinking';
+        
+        // Initialize or reshuffle if we've reached the end
+        if (this.currentIndex === -1 || this.currentIndex >= this.shuffledVerbs.length) {
+            const lastVerb = this.shuffledVerbs.length > 0 ? this.shuffledVerbs[this.shuffledVerbs.length - 1] : null;
+            
+            this.shuffledVerbs = this.shuffleArray(CLAUDE_VERBS);
+            this.currentIndex = 0;
+            
+            // Prevent immediate repeat if the new first verb is the same as the last verb
+            if (lastVerb && this.shuffledVerbs[0] === lastVerb && this.shuffledVerbs.length > 1) {
+                [this.shuffledVerbs[0], this.shuffledVerbs[1]] = [this.shuffledVerbs[1], this.shuffledVerbs[0]];
+            }
+        }
+        
+        const verb = this.shuffledVerbs[this.currentIndex];
+        this.currentIndex++;
+        return verb;
     }
 
     async typeWrite(text) {
@@ -60,12 +97,7 @@ class ClaudeTypewriterEngine {
             this.verbContainer.innerText = '';
             this.dotsContainer.innerText = '';
             
-            if (typeof CLAUDE_VERBS === 'undefined') {
-                console.error('[ERR] Global registry data not found.');
-                break;
-            }
-
-            const targetState = CLAUDE_VERBS[Math.floor(Math.random() * CLAUDE_VERBS.length)];
+            const targetState = this.getNextVerb();
             
             await this.typeWrite(targetState);
             await this.delay(this.dotInterval);
