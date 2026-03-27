@@ -115,7 +115,7 @@
             <article class="diag-terminal">
                 <div class="titlebar">
                     <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
-                    <span class="titlebar-label">claude — diagnostic_dashboard</span>
+                    <span class="titlebar-label">claude — zsh</span>
                 </div>
 
                 <div class="diag-body">
@@ -123,49 +123,49 @@
                         <div class="state-entry is-active" id="entry-idle" onclick="setDiagnosticState('idle')">
                             <div class="state-entry-top">
                                 <div class="indicator-dot dot-idle"></div>
-                                <span class="indicator-label" style="color:#555">IDLE</span>
+                                <span class="indicator-label" style="color:#555">Idle</span>
                             </div>
-                            <div class="indicator-description">Workstation is standby. Ready for new orchestration tasks.</div>
+                            <div class="indicator-description">Waiting for your next message or command</div>
                         </div>
 
                         <div class="state-entry" id="entry-thinking" onclick="setDiagnosticState('thinking')">
                             <div class="state-entry-top">
                                 <div class="indicator-dot dot-think"></div>
-                                <span class="indicator-label" style="color:var(--terminal-amber)">THINKING</span>
+                                <span class="indicator-label" style="color:var(--terminal-amber)">Thinking</span>
                             </div>
-                            <div class="indicator-description">Analyzing architectural roadmap and synchronizing tool constraints.</div>
+                            <div class="indicator-description">Claude is reasoning through your request</div>
                         </div>
 
                         <div class="state-entry" id="entry-running" onclick="setDiagnosticState('running')">
                             <div class="state-entry-top">
                                 <div class="indicator-dot dot-run"></div>
-                                <span class="indicator-label" style="color:#3b9eff">RUNNING</span>
+                                <span class="indicator-label" style="color:#3b9eff">Running</span>
                             </div>
-                            <div class="indicator-description">Executing subprocesses and spawning high-fidelity technical threads.</div>
+                            <div class="indicator-description">Executing a shell command or tool call</div>
                         </div>
 
                         <div class="state-entry" id="entry-waiting" onclick="setDiagnosticState('waiting')">
                             <div class="state-entry-top">
                                 <div class="indicator-dot dot-wait"></div>
-                                <span class="indicator-label" style="color:var(--terminal-green)">WAITING</span>
+                                <span class="indicator-label" style="color:var(--terminal-green)">Waiting for you</span>
                             </div>
-                            <div class="indicator-description">Technically paused. Waiting for external user verification.</div>
+                            <div class="indicator-description">Needs your approval or input to proceed</div>
                         </div>
 
                         <div class="state-entry" id="entry-error" onclick="setDiagnosticState('error')">
                             <div class="state-entry-top">
                                 <div class="indicator-dot dot-error"></div>
-                                <span class="indicator-label" style="color:var(--terminal-red)">ERROR</span>
+                                <span class="indicator-label" style="color:var(--terminal-red)">Error</span>
                             </div>
-                            <div class="indicator-description">Non-binary fault detected. Initializing stack audit and recovery.</div>
+                            <div class="indicator-description">Something went wrong — check the output</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="diag-hud">
                     <div class="hud-dot dot-idle" id="hud-status-dot"></div>
-                    <span class="hud-label" id="hud-status-label" style="color:#555">IDLE</span>
-                    <span class="hud-sub" id="hud-status-sub">— ORCHESTRATION_SUSPENDED</span>
+                    <span class="hud-label" id="hud-status-label" style="color:#555">Idle</span>
+                    <span class="hud-sub" id="hud-status-sub">— Waiting for your next message or command</span>
                 </div>
             </article>
 
@@ -174,23 +174,23 @@
                 <div class="control-grid">
                     <button class="control-btn is-selected" id="btn-idle" onclick="setDiagnosticState('idle')">
                         <div class="indicator-dot dot-idle"></div>
-                        IDLE
+                        Idle
                     </button>
                     <button class="control-btn" id="btn-thinking" onclick="setDiagnosticState('thinking')">
                         <div class="indicator-dot dot-think"></div>
-                        THINKING
+                        Thinking
                     </button>
                     <button class="control-btn" id="btn-running" onclick="setDiagnosticState('running')">
                         <div class="indicator-dot dot-run"></div>
-                        RUNNING
+                        Running
                     </button>
                     <button class="control-btn" id="btn-waiting" onclick="setDiagnosticState('waiting')">
                         <div class="indicator-dot dot-wait"></div>
-                        WAITING
+                        Waiting for you
                     </button>
                     <button class="control-btn" id="btn-error" onclick="setDiagnosticState('error')">
                         <div class="indicator-dot dot-error"></div>
-                        ERROR
+                        Error
                     </button>
                 </div>
             </div>
