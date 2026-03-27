@@ -61,12 +61,25 @@ Claude Spinner Words is a technical registry and configuration workstation for t
 
 | Feature | Description |
 |---------|-------------|
-| **Official Registry** | Authoritative index of **90 Verified Verbs** audit-trailed from the production CLI. |
+| **Official Registry** | Authoritative index of **90 Verified Verbs** audit-trailed directly from the production CLI. |
 | **Autonomous Workstation** | Technical configuration environment with **Stochastic Shimmer** for realistic latency simulation. |
+| **Thematic Extensions** | Professionally curated library with **35+ Specialized Themes** for environment personalization. |
 | **Automation Pipeline** | Zero-dependency **PowerShell & Bash** scripts for deterministic `settings.json` injection. |
-| **Thematic Indices** | Professionally curated collections for stylistic environment extensions (e.g., Sci-Fi, Minimal). |
 | **Hardware Alignment** | CSS3 Grid/Flexbox architecture optimized for **100vh Workstation Stability**. |
+| **Library Depth** | Cross-cultural collection featuring **Marvel, Disney, Friends, and Generational** indices. |
+| **Structural Integrity** | Modular JSON-based thematic engine allowing for **Scalable Community Contributions**. |
 | **Live Synchronization** | Automated **GitHub Actions CI/CD** pipeline for real-time workstation deployment. |
+
+> [!NOTE]
+> ### Technical Polish: The Thematic Singularity
+> We have engineered an **Autonomous Thematic Engine** that allows users to seamlessly transition between the canonical Claude Code aesthetic and over **35+ specialized technical environments**. Beyond standard verb registration, the system ensures **100% visual parity** with the official CLI, providing researchers and developers with a precise workstation for validating state indicator cadence and UX diagnostic visibility.
+
+### Tech Stack
+- **Language**: Vanilla JavaScript (ES6 Modules)
+- **Engine**: **Autonomous Workstation** (Hardware-Accelerated CSS3 Grid/Flexbox)
+- **Registry**: **Canonical 90-Verb Index** (Audit-Trailed from production CLI)
+*   **Automation**: **Multi-Platform Shell Scripts** (PowerShell v5.1+, Bash v4.0+)
+*   **Library**: **35+ Specialized Themes** (Modular JSON-Based Extension Engine)
 
 ---
 
