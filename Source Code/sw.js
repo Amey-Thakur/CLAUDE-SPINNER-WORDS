@@ -20,7 +20,13 @@ const ASSETS = [
     './css/loader.css',
     './css/state_sim.css',
     './css/navigation.css',
-    './js/dist/bundle.min.js?v=4'
+    './js/verbs.js',
+    './js/signature.js',
+    './js/loader.js',
+    './js/engine.js',
+    './js/state_sim.js',
+    './js/navigation.js',
+    './js/app.js'
 ];
 
 self.addEventListener('install', (event) => {

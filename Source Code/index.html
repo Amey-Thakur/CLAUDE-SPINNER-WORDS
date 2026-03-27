@@ -218,7 +218,13 @@
     </div>
 
     <!-- Asset loading: JavaScript (Optimized Bundle & Service Worker) -->
-    <script defer src="js/dist/bundle.min.js?v=4"></script>
+    <script src="js/verbs.js" defer></script>
+    <script src="js/signature.js" defer></script>
+    <script src="js/loader.js" defer></script>
+    <script src="js/engine.js" defer></script>
+    <script src="js/state_sim.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/app.js" defer></script>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
