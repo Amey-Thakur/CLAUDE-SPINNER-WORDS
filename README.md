@@ -62,7 +62,7 @@ Claude Spinner Words is a technical registry and workstation simulator for the C
 | Feature | Description |
 |---------|-------------|
 | **Official Registry** | Authoritative index of **90 Verified Verbs** audit-trailed from the production CLI. |
-| **High-Fidelity Simulator** | Technical workstation emulator with **Stochastic Shimmer** for realistic latency simulation. |
+| **Authentic Simulator** | Technical workstation emulator with **Stochastic Shimmer** for realistic latency simulation. |
 | **Automation Pipeline** | Zero-dependency **PowerShell & Bash** scripts for deterministic `settings.json` injection. |
 | **Thematic Indices** | Professionally curated collections for stylistic environment extensions (e.g., Sci-Fi, Minimal). |
 | **Hardware Alignment** | CSS3 Grid/Flexbox architecture optimized for **100vh Workstation Stability**. |
@@ -111,7 +111,7 @@ CLAUDE-SPINNER-WORDS/
 <div align="center">
   <b>Social Identity Branding</b>
   <br>
-  <i>High-fidelity social preview illustrating the sovereign technical identity of the registry.</i>
+  <i>Polished social preview illustrating the sovereign technical identity of the registry.</i>
   <br><br>
   <img src="screenshots/social_preview.png" alt="Social Identity" width="90%">
   <br><br><br>
@@ -147,7 +147,7 @@ The following index contains the canonical dataset of asynchronous state indicat
 > [!TIP]
 > This registry contains **90 unique words**. Claude uses these 'verbs' to show it is currently 'thinking' or 'working' on your request.
 
-```python
+```text
 Accomplishing       Actioning           Actualizing         Baking              Booping
 Brewing             Calculating         Cerebrating         Channelling         Churning
 Clauding            Coalescing          Cogitating          Combobulating       Computing
@@ -167,6 +167,33 @@ Stewing             Sussing             Synthesizing        Thinking            
 Transmuting         Unfurling           Unravelling         Vibing              Wandering
 Whirring            Wibbling            Wizarding           Working             Wrangling
 ```
+
+---
+
+### Specialized Extension: Friends Sitcom Registry
+
+This polished index showcases the 'Friends' thematic extension. It is one of the **35+ specialized themes** used to personalize the workstation experience.
+
+```text
+Pivoting                            Break-Taking
+Coffee-Drinking                     Smelly-Cat-Singing
+Lobster-Seeking                     Moist-Maker-Protecting
+Holiday-Armadillo-ing               Unagi-Focusing
+Appartment-Switching                Joey-Special-Ordering
+Fountains-Dancing                   One-Where-We-Are-Loading
+How-You-Doin-ing                    Seven-Seven-Seven-ing
+Regina-Phalange-ing                 Bamboozling
+Central-Perk-ing                    Transponster-ing
+He-is-a-Transponster-ing            They-Dont-Know-That-We-Know-ing
+Geller-Cup-Chasing                  Princess-Consuela-Banana-Hammock-ing
+Crap-Bag-ing                        Ichiban-Lipstick-For-Men-ing
+Hand-Twins-Matching                 Left-Phalange-Checking
+Paper-Snow-Ghost-ing                Moo-Point-ing
+Whack-Playstation-Sup-ing           Could-I-BE-More-Loading-ing
+```
+
+> [!TIP]
+> This is a preview of a **Custom Theme Extension**. You can find even more words and legendary sitcom moments within the `themes/friends-sitcom.json` file.
 
 ---
 
@@ -220,6 +247,29 @@ This repository and its technical assets are made available under the **MIT Lice
 > **Summary**: You are free to share and adapt this content for any purpose, even commercially, as long as you provide appropriate attribution to the original author.
 
 Copyright © 2026 Amey Thakur
+
+---
+
+<!-- CONTRIBUTING -->
+<a name="contributing"></a>
+## Contributing
+
+This repository thrives on community-driven technical enhancements and creative thematic indices. We maintain a rigorous fork-and-pull model to ensure that every contribution maintains neat visual parity.
+
+1. **Fork the Registry** Replicate the primary scholarly repository to your personal remote namespace.
+2. **Initialize Custom Theme**
+   ```bash
+   git checkout -b theme/FriendsSitcom
+   ```
+3. **Audit and Integrate** Stage your new JSON theme or verb updates with descriptive messaging:
+   ```bash
+   git commit -m 'Registry: Add Friends thematic index'
+   ```
+4. **Push to Origin** Upload your specialized branch to your remote origin:
+   ```bash
+   git push origin theme/FriendsSitcom
+   ```
+5. **Submit Pull Request** Initiate a formal review process for integration into the canonical workstation.
 
 ---
 

@@ -1,9 +1,21 @@
 {
   "theme": "Corporate-Dream",
-  "description": "State indicators vocalizing the silent thoughts of corporate employees.",
+  "description": "Silent but essential state indicators reflecting the modern developer's workplace aspirations.",
   "verbs": [
-    "Resigning", "Salary-Negotiating", "Promoting-Myself", "Declining-Meetings",
-    "Ignoring-Emails", "Quiet-Quitting", "Transparency-Seeking", "Work-Life-Balancing",
-    "Mental-Health-Day-ing", "Delegating", "Upward-Managing", "Authenticity-Finding"
+    "Resigning",
+    "Salary-Negotiating",
+    "Promoting-Myself",
+    "Declining-Meetings",
+    "Ignoring-Emails",
+    "Quiet-Quitting",
+    "Transparency-Seeking",
+    "Work-Life-Balancing",
+    "Mental-Health-Day-ing",
+    "Delegating",
+    "Upward-Managing",
+    "Authenticity-Finding",
+    "Transparently-Communicating",
+    "Sabbatical-Planning",
+    "Rejecting-Scope-Creep"
   ]
 }

@@ -2,8 +2,27 @@
   "theme": "Startup-Hustle",
   "description": "High-velocity state indicators for developers disrupting industries and chasing venture capital.",
   "verbs": [
-    "Pivoting", "Disrupting", "Scaling", "Leveraging", "Synergizing", "Monetizing",
-    "Onboarding", "Iterating", "Pitching", "Exiting", "Bootstrapping", "Growth-Hacking",
-    "Unicorn-Chasing", "Synthesizing", "Networking", "Burn-Rate-Calculating"
+    "Pivoting",
+    "Disrupting",
+    "Scaling",
+    "Leveraging",
+    "Synergizing",
+    "Monetizing",
+    "Onboarding",
+    "Iterating",
+    "Pitching",
+    "Exiting",
+    "Bootstrapping",
+    "Growth-Hacking",
+    "Unicorn-Chasing",
+    "Synthesizing",
+    "Networking",
+    "Burn-Rate-Calculating",
+    "Agile-Sprinting",
+    "Silo-Breaking",
+    "Disrupting-Silos",
+    "Series-A-Chasing",
+    "Venture-Capitalizing",
+    "Grinding"
   ]
 }

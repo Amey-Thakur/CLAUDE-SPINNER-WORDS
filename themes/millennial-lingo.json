@@ -2,8 +2,22 @@
   "theme": "Millennial-Lingo",
   "description": "Nostalgic and slightly exhausted state indicators inspired by early-internet and millennial culture.",
   "verbs": [
-    "Adulting", "Struggling", "Googling", "Avocado-Toasting", "Networking",
-    "Self-Care-ing", "Burnout-Managing", "Ghosting", "Side-Hustling",
-    "Influencing", "Cancel-ing", "Tired-ness-Managing", "Nostalgia-Tripping"
+    "Adulting",
+    "Struggling",
+    "Googling",
+    "Avocado-Toasting",
+    "Networking",
+    "Self-Care-ing",
+    "Burnout-Managing",
+    "Ghosting",
+    "Side-Hustling",
+    "Influencing",
+    "Cancel-ing",
+    "Tired-ness-Managing",
+    "Nostalgia-Tripping",
+    "Buzzfeeding",
+    "Taco-Bell-Seeking",
+    "Streaming-Discovery-Plus",
+    "Vlog-Reviewing"
   ]
 }

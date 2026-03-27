@@ -2,8 +2,26 @@
   "theme": "Retro-Gamer",
   "description": "Nostalgic 8-bit state indicators for developers with a passion for classic gaming aesthetics.",
   "verbs": [
-    "Loading", "Rendering", "Spawning", "Leveling", "Saving", "Buffing",
-    "Scaling", "Questing", "Looting", "Polling", "Crawling", "Jumping",
-    "Warping", "Clipping", "Triggering", "Resetting", "Phasing"
+    "Loading",
+    "Rendering",
+    "Spawning",
+    "Leveling",
+    "Saving",
+    "Buffing",
+    "Scaling",
+    "Questing",
+    "Looting",
+    "Polling",
+    "Crawling",
+    "Jumping",
+    "Warping",
+    "Clipping",
+    "Triggering",
+    "Resetting",
+    "Phasing",
+    "Respawning",
+    "Speedrunning",
+    "Glitch-Exploiting",
+    "Achievement-Seeking"
   ]
 }

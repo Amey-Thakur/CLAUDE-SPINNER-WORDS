@@ -1,17 +1,25 @@
-[
-  "Calibrating Flux Capacitors",
-  "Engaging Warp Drive",
-  "Initializing Holodeck",
-  "Rerouting Power to Shields",
-  "Scanning Sector 7G",
-  "Bypassing Mainframe Security",
-  "Decrypting Quantum Packets",
-  "Synchronizing Neural Interlink",
-  "Warping Space-Time",
-  "Optimizing Dilithium Matrix",
-  "Hacking the Gibson",
-  "Overriding Logic Gates",
-  "Compiling Nanobots",
-  "Streaming Hypermedia",
-  "Materializing Subspace"
-]
+{
+  "theme": "Sci-Fi",
+  "description": "Futuristic and advanced technology state indicators inspired by science fiction and space exploration.",
+  "verbs": [
+    "Calibrating Flux Capacitors",
+    "Engaging Warp Drive",
+    "Initializing Holodeck",
+    "Rerouting Power to Shields",
+    "Scanning Sector 7G",
+    "Bypassing Mainframe Security",
+    "Decrypting Quantum Packets",
+    "Synchronizing Neural Interlink",
+    "Warping Space-Time",
+    "Optimizing Dilithium Matrix",
+    "Hacking the Gibson",
+    "Overriding Logic Gates",
+    "Compiling Nanobots",
+    "Streaming Hypermedia",
+    "Materializing Subspace",
+    "Tachyon-Beam-Firing",
+    "Jump-Vector-Calculating",
+    "Phase-Shifting-Node",
+    "Cloaking-Ship-Node"
+  ]
+}
