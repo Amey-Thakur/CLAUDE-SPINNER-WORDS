@@ -62,8 +62,19 @@
 /* Responsive adjustment for mobile */
 @media (max-width: 768px) {
     .back-to-top {
-        bottom: 25px;
-        right: 25px;
-        padding: 10px 14px;
+        bottom: 20px;
+        right: 20px;
+        padding: 8px 12px;
+        font-size: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .back-to-top .btn-label {
+        font-size: 8px;
+    }
+
+    .back-to-top svg {
+        width: 14px;
+        height: 14px;
     }
 }
