@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7vh;
+    gap: 3vh;
     animation: diagSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     position: relative;
     z-index: 5;
@@ -27,7 +27,7 @@
 
 .diag-header {
     text-align: center;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
 }
 
 .diag-header h2 {
