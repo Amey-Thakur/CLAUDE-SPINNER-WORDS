@@ -22,7 +22,7 @@ The Claude Code CLI utilizes a configuration-driven mechanism to display asynchr
 - `official/`: Authentic datasets extracted from CLI binary audits.
 - `themes/`: Curated indices for alternative aesthetic configurations.
 - `scripts/`: Implementation tools for deterministic state updates.
-- `docs/`: Technical specifications and architectural guidelines.
+- `docs/`: Technical specifications, architectural guidelines, and branded assets.
 - `CITATION.cff`: Scholarly metadata for project attribution.
 
 ## Implementation Guide
