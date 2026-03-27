@@ -1,0 +1,272 @@
+/**
+ * Filename: state_sim.css
+ * Author: Amey Thakur
+ * GitHub: https://github.com/Amey-Thakur
+ * Repository: https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS
+ * Release Date: 2026-03-26
+ * License: MIT
+ */
+
+.diagnostic-module {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 6vh; /* Optimized spacing to clear primary terminal shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vh;
+    animation: diagSlideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    z-index: 5;
+}
+
+@keyframes diagSlideUp {
+    from { opacity: 0; transform: translateY(60px) scale(0.98); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.diag-header {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.diag-header h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: clamp(16px, 2vh, 24px);
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.diag-logo {
+    width: clamp(24px, 3.5vh, 40px);
+    height: auto;
+    color: var(--accent-color);
+}
+
+.diag-header p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-top: 12px;
+    letter-spacing: 0.05em;
+}
+
+/* ── Diagnostic Terminal ── */
+.diag-terminal {
+    width: 100%;
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.diag-terminal::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.01) 50%, transparent 50%);
+    background-size: 100% 4px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.diag-terminal .titlebar {
+    background: #1A1A19;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.diag-body {
+    padding: clamp(30px, 4.5vh, 60px);
+    min-height: 300px;
+}
+
+/* ── State List ── */
+.state-index {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.state-entry {
+    padding: 15px 20px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.state-entry:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.state-entry.is-active {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.06);
+}
+
+.state-entry-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.indicator-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.indicator-label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.indicator-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-left: 27px;
+    margin-top: 6px;
+    line-height: 1.6;
+}
+
+/* ── Status HUD (Footer of terminal) ── */
+.diag-hud {
+    border-top: 1px solid var(--border-color);
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #0D0D0C;
+    font-size: 13px;
+}
+
+.hud-dot { width: 10px; height: 10px; border-radius: 50%; }
+.hud-label { font-weight: 700; }
+.hud-sub { color: var(--text-secondary); }
+
+/* ── Controls ── */
+.control-hub {
+    width: 100%;
+    max-width: 800px;
+}
+
+.control-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    letter-spacing: 0.2em;
+}
+
+.control-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.control-btn {
+    background: var(--code-bg);
+    border: 1px solid var(--border-color);
+    padding: 15px 10px;
+    border-radius: 6px;
+    color: var(--text-secondary);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.control-btn:hover {
+    color: var(--text-primary);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.control-btn.is-selected {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ── Event Log ── */
+.event-log-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.event-log {
+    background: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 20px 25px;
+    height: 180px;
+    overflow-y: auto;
+    font-size: 12px;
+    color: rgba(244, 243, 238, 0.4);
+    line-height: 1.8;
+}
+
+.log-row { margin-bottom: 4px; display: flex; gap: 15px; }
+.log-time { color: rgba(244, 243, 238, 0.1); flex-shrink: 0; font-family: 'JetBrains Mono', monospace; }
+.log-body { color: rgba(244, 243, 238, 0.3); }
+.log-body.highlight { color: rgba(244, 243, 238, 0.7); }
+
+/* Canonical Simulator Colors */
+.dot-idle  { background: #555; }
+.dot-think { background: #f0a500; animation: pulseDiag 1.2s ease-in-out infinite; }
+.dot-run   { background: #3b9eff; animation: pulseDiag 0.5s ease-in-out infinite; }
+.dot-wait  { background: #7ec8a0; }
+.dot-error { background: #e24b4a; animation: blinkDiag 1s step-end infinite; }
+
+@keyframes pulseDiag { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+@keyframes blinkDiag { 0%, 100% { opacity: 1; } 50% { opacity: 0.1; } }
+
+@media (max-width: 600px) {
+    .control-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── Custom Scrollbar Orchestration ── */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(244, 243, 238, 0.05);
+    border-radius: 4px;
+    border: 2px solid var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(244, 243, 238, 0.1);
+}
+
+.event-log::-webkit-scrollbar-track {
+    background: #0D0D0C;
+    border-radius: 0 4px 4px 0;
+}
+
+.event-log::-webkit-scrollbar-thumb {
+    background: rgba(244, 243, 238, 0.08);
+    border: 2px solid #0D0D0C;
+}

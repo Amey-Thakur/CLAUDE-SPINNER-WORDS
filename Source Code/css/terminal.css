@@ -17,7 +17,7 @@
     background-color: var(--code-bg);
     border: 1px solid var(--border-color);
     border-radius: 4px;
-    box-shadow: 0 50px 140px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.9);
     position: relative;
     overflow: hidden;
 }
