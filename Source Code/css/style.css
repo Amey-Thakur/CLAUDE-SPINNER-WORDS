@@ -364,7 +364,7 @@ footer a {
 
 @media (max-width: 768px) {
     body {
-        padding: 20px 15px 80px 15px;
+        padding: 20px 15px 100px 15px;
         overflow-y: auto;
     }
 
