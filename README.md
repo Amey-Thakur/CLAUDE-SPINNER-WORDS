@@ -88,9 +88,9 @@ CLAUDE-SPINNER-WORDS/
 │   ├── main_page_2.png                  # Technical verb cadence verification
 │   └── 404_page.png                     # Standardized 404 error handler
 │
-├── official/                            # Canonical indicator datasets
-├── themes/                              # Stylistic environment extensions
-├── scripts/                             # Implementation & automation tools
+├── official/                            # Canonical indicator datasets (90 Verbs)
+├── themes/                              # 35+ Stylistic environment extensions
+├── scripts/                             # Implementation & automation tools (apply.ps1, etc.)
 │
 ├── Source Code/                         # Integrated technical workstation simulator
 │   ├── js/                              # Modular logic & verb registries
@@ -98,6 +98,8 @@ CLAUDE-SPINNER-WORDS/
 │   └── index.html                       # Simulator entrance & bootstrap index
 │
 ├── CITATION.cff                         # Scholarly Citation Metadata
+├── codemeta.json                        # Technical software metadata (LD-JSON)
+├── CONTRIBUTING.md                      # High-fidelity collaboration guide
 ├── SECURITY.md                          # Security protocols & disclosure policy
 ├── LICENSE                              # MIT Open Source License distribution
 └── README.md                            # Primary entrance & architectural hub

@@ -3,6 +3,7 @@
   "@type": "SoftwareSourceCode",
   "license": "https://spdx.org/licenses/MIT.html",
   "name": "Claude Spinner Words",
+  "version": "1.1.0",
   "runtimePlatform": "Claude Code CLI",
   "author": [
     {
@@ -12,10 +13,12 @@
       "id": "https://orcid.org/0000-0001-5644-1575"
     }
   ],
-  "description": "A comprehensive configuration registry and automated implementation suite for customizing Claude Code spinner verbs.",
+  "description": "A comprehensive configuration registry and automated implementation suite for customizing the official 90 Claude Code spinner verbs with 35+ specialized themes.",
   "programmingLanguage": [
     "JSON",
     "PowerShell",
-    "Bash"
+    "Bash",
+    "JavaScript",
+    "CSS3"
   ]
 }
