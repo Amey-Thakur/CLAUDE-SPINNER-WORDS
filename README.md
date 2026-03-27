@@ -250,7 +250,7 @@ I was intrigued by how Claude 'thinks' and the unique words it uses while workin
 
 **Key Contributions:**
 - **Official Registry (90 Verbs)**: I audited and documented the original 90 words directly from the Claude Code CLI.
-- **30+ Specialized Themes**: I created diverse collections like 'Gen-Z-Lingo', 'Corporate-Dream', 'High-Fantasy', 'Startup-Hustle', and 'AI-Philosophy'.
+- **35+ Specialized Themes**: I created diverse collections like 'Marvel-Universe', 'Disney-Magic', 'Friends-Sitcom', 'Corporate-Dream', and 'High-Fantasy'.
 - **100+ New Custom Words**: I added original, themed words throughout the library to help you personalize your environment.
 - **Community-Driven**: I added a [Contributing Guide](CONTRIBUTING.md) so others can help expand the theme collection!
 
