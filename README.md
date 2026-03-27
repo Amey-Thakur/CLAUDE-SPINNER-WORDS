@@ -10,7 +10,7 @@
 
   Autonomous technical registry and workstation simulator for the Claude Code CLI state indicator mechanism.
 
-  **[Source Code](Source%20Code/)** &nbsp;·&nbsp; **[Technical Specification](docs/SPECIFICATION.md)** &nbsp;·&nbsp; **[Live Workstation](https://amey-thakur.github.io/CLAUDE-SPINNER-WORDS/)**
+  **[Source Code](Source%20Code/)** &nbsp;·&nbsp; **[Technical Specification](docs/SPECIFICATION.md)** &nbsp;·&nbsp; **[Live Demo](https://amey-thakur.github.io/CLAUDE-SPINNER-WORDS/)**
 
   <br>
 
@@ -263,5 +263,9 @@ I was intrigued by how Claude 'thinks' and the unique words it uses while workin
   [↑ Back to Top](#readme-top)
 
   [Author](#author) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [Features](#features) &nbsp;·&nbsp; [Structure](#project-structure) &nbsp;·&nbsp; [Results](#results) &nbsp;·&nbsp; [Registry](#indicator-registry) &nbsp;·&nbsp; [Contributing](CONTRIBUTING.md) &nbsp;·&nbsp; [Quick Start](#quick-start) &nbsp;·&nbsp; [Usage Guidelines](#usage-guideline) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository)
+
+  <br>
+
+  <a href="https://amey-thakur.github.io/CLAUDE-SPINNER-WORDS/"><img src="Source Code/assets/favicon.svg" width="24" height="24" title="Claude Spinner Words | Global Entrance"></a> **[Live Demo](https://amey-thakur.github.io/CLAUDE-SPINNER-WORDS/)**
 
 </div>
