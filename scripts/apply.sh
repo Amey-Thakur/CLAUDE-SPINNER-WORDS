@@ -27,7 +27,7 @@ THEME_JSON=$(cat "$THEME_FILE")
 # Use jq if available for safe JSON manipulation
 if command -v jq >/dev/null 2>&1; then
     TEMP_FILE=$(mktemp)
-    jq --argjson verbs "$THEME_JSON" '.spinner = {"mode": "replace", "verbs": $verbs}' "$SETTINGS_PATH" > "$TEMP_FILE" && mv "$TEMP_FILE" "$SETTINGS_PATH"
+    jq --argjson theme_data "$THEME_JSON" '.spinner = {"mode": "replace", "verbs": $theme_data.verbs}' "$SETTINGS_PATH" > "$TEMP_FILE" && mv "$TEMP_FILE" "$SETTINGS_PATH"
 else
     echo "Warning: jq is not installed. Manual installation recommended for safe JSON manipulation."
     echo "Note: This script requires jq for automated injection on Unix systems."

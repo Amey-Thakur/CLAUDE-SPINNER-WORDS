@@ -28,7 +28,7 @@ $Settings = Get-Content -Raw $SettingsPath | ConvertFrom-Json
 # Update settings
 $Settings | Add-Member -MemberType NoteProperty -Name "spinner" -Value @{
     mode = "replace"
-    verbs = $ThemeJson
+    verbs = $ThemeJson.verbs
 } -Force
 
 # Write back
