@@ -1,0 +1,9 @@
+{
+  "theme": "Detective-Mystery",
+  "description": "Intriguing and investigative state indicators for developers solving technical puzzles.",
+  "verbs": [
+    "Investigating", "Analyzing", "Deducing", "Questioning", "Shadowing", "Interrogating",
+    "Tailoring", "Cracking", "Sniffing", "Tracing", "Profiling", "Surveilling",
+    "Debugging", "Hunting", "Seeking", "Revealing"
+  ]
+}

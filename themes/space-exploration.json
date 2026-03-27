@@ -1,0 +1,9 @@
+{
+  "theme": "Space-Exploration",
+  "description": "Galactic state indicators for developers exploring the final frontier of technical registries.",
+  "verbs": [
+    "Launching", "Orbiting", "Docking", "Igniting", "Propelling", "Voyaging",
+    "Surveying", "Navigating", "Stabilizing", "Transmitting", "Decompressing",
+    "Colonizing", "Mining", "Probing", "Relaying", "Beaming", "Warping"
+  ]
+}

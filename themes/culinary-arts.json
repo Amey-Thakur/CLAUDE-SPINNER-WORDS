@@ -1,0 +1,9 @@
+{
+  "theme": "Culinary-Arts",
+  "description": "Food and cooking metaphors for developers who create delicious technical experiences.",
+  "verbs": [
+    "Sizzling", "Baking", "Brewing", "Simmering", "Frying", "Grilling",
+    "Steaming", "Boiling", "Mixing", "Whisking", "Folding", "Garnishing",
+    "Serving", "Devouring", "Layering", "Blending"
+  ]
+}
