@@ -70,15 +70,15 @@
 
 .repo-title {
     font-family: 'Inter', sans-serif;
-    font-size: clamp(42px, 7vh, 84px); /* Increased from 38px/76px */
+    font-size: clamp(45px, 8vh, 92px); /* Bumped from 42px/84px */
     font-weight: 700;
     margin: 0;
-    letter-spacing: 1px; /* Changed from -3px to widen it */
+    letter-spacing: 2.5px; /* Bumped from 1px to match wide tagline */
     color: var(--text-primary);
     line-height: 0.9;
     text-transform: none;
     display: block;
-    width: 100%; /* Ensure it spans the container */
+    width: 100%; 
 }
 
 @media (max-width: 480px) {
