@@ -22,10 +22,31 @@
     border: 1px dashed rgba(255, 255, 255, 0.04);
 }
 
+@media (max-width: 768px) {
+    .simulation-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .simulation-container {
+        gap: 15px;
+        padding: 2vh 0;
+    }
+}
+
 .claude-spinner-root {
     width: clamp(58px, 8vh, 92px);
     height: clamp(58px, 8vh, 92px);
     animation: claudeSyncPulse 2.4s infinite ease-in-out;
+    flex-shrink: 0; /* Never disappear or shrink below clamp */
+}
+
+@media (max-width: 480px) {
+    .claude-spinner-root {
+        width: clamp(38px, 5vh, 48px);
+        height: clamp(38px, 5vh, 48px);
+    }
 }
 .claude-spinner-root path { fill: var(--accent-color); }
 
@@ -50,9 +71,22 @@
     line-height: 1;
 }
 
+@media (max-width: 480px) {
+    .verb-text {
+        font-size: clamp(18px, 4vh, 28px);
+        letter-spacing: -0.5px;
+    }
+}
+
 .dots {
     font-size: clamp(30px, 4.8vh, 62px);
     color: var(--text-secondary);
+}
+
+@media (max-width: 480px) {
+    .dots {
+        font-size: clamp(18px, 4vh, 28px);
+    }
 }
 
 .cursor {
@@ -61,6 +95,13 @@
     background-color: var(--accent-color);
     margin-left: 10px;
     animation: blink 1s infinite step-end;
+}
+
+@media (max-width: 480px) {
+    .cursor {
+        height: clamp(18px, 4vh, 28px);
+        margin-left: 6px;
+    }
 }
 
 @keyframes blink {
