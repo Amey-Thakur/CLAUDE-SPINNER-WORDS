@@ -249,9 +249,10 @@ Use this project to study the **'stochastic signaling'** and technical cadence o
 I was intrigued by how Claude 'thinks' and the unique words it uses while working. I wanted to personalize my own environment, but because I couldn't find any existing public registry or simulator, I built this repository.
 
 **Key Contributions:**
-- **The Official 90**: I audited and documented the original 90 words from the CLI.
-- **Custom Themes**: I created new collections like 'Cyber-Punk', 'Sci-Fi', 'Cryptographic', 'Minimalist', and 'Scholarly'.
-- **New Words**: I added extra words to the themes to make the technical environment even more personalized.
+- **Official Registry (90 Verbs)**: I audited and documented the original 90 words directly from the Claude Code CLI.
+- **12+ Specialized Themes**: I created diverse collections like 'Cyber-Punk', 'Steampunk', and 'Scholarly'.
+- **100+ New Custom Words**: I added original, themed words throughout the library to help you personalize your environment.
+- **Community-Driven**: I added a [Contributing Guide](CONTRIBUTING.md) so others can help expand the theme collection!
 
 **Connect:** [GitHub](https://github.com/Amey-Thakur) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/amey-thakur) &nbsp;·&nbsp; [ORCID](https://orcid.org/0000-0001-5644-1575)
 
@@ -261,6 +262,6 @@ I was intrigued by how Claude 'thinks' and the unique words it uses while workin
 
   [↑ Back to Top](#readme-top)
 
-  [Author](#author) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [Features](#features) &nbsp;·&nbsp; [Structure](#project-structure) &nbsp;·&nbsp; [Results](#results) &nbsp;·&nbsp; [Quick Start](#quick-start) &nbsp;·&nbsp; [Usage Guidelines](#usage-guideline) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository)
+  [Author](#author) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [Features](#features) &nbsp;·&nbsp; [Structure](#project-structure) &nbsp;·&nbsp; [Results](#results) &nbsp;·&nbsp; [Registry](#indicator-registry) &nbsp;·&nbsp; [Contributing](CONTRIBUTING.md) &nbsp;·&nbsp; [Quick Start](#quick-start) &nbsp;·&nbsp; [Usage Guidelines](#usage-guideline) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [About](#about-this-repository)
 
 </div>
