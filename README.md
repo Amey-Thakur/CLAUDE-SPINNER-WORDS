@@ -8,7 +8,7 @@
   [![Technology](https://img.shields.io/badge/Technology-Vanilla%20JS%20%7C%20CSS3-blueviolet)](https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS)
   [![Developed by Amey Thakur](https://img.shields.io/badge/Developed%20by-Amey%20Thakur-blue.svg)](https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS)
 
-  Autonomous technical registry and workstation simulator for the Claude Code CLI state indicator mechanism.
+  Autonomous technical registry and configuration workstation for the Claude Code CLI state indicator mechanism.
 
   **[Source Code](Source%20Code/)** &nbsp;·&nbsp; **[Technical Specification](docs/SPECIFICATION.md)** &nbsp;·&nbsp; **[Live Demo](https://amey-thakur.github.io/CLAUDE-SPINNER-WORDS/)**
 
@@ -47,7 +47,7 @@
 <a name="overview"></a>
 ## Overview
 
-Claude Spinner Words is a technical registry and workstation simulator for the Claude Code CLI. This project provides a complete index of the internal state indicators used by the CLI tool. It includes a terminal-style simulator to verify how these indicators appear in a workstation environment. Users can also find automated scripts to apply custom indicator sets to their local configuration files.
+Claude Spinner Words is a technical registry and configuration workstation for the Claude Code CLI. This project provides a complete index of the internal state indicators used by the CLI tool. It includes a terminal-style workstation to verify how these indicators appear in a workstation environment. Users can also find automated scripts to apply custom indicator sets to their local configuration files.
 
 > [!TIP]
 > ### Configuration Precedence
@@ -62,7 +62,7 @@ Claude Spinner Words is a technical registry and workstation simulator for the C
 | Feature | Description |
 |---------|-------------|
 | **Official Registry** | Authoritative index of **90 Verified Verbs** audit-trailed from the production CLI. |
-| **Authentic Simulator** | Technical workstation emulator with **Stochastic Shimmer** for realistic latency simulation. |
+| **Autonomous Workstation** | Technical configuration environment with **Stochastic Shimmer** for realistic latency simulation. |
 | **Automation Pipeline** | Zero-dependency **PowerShell & Bash** scripts for deterministic `settings.json` injection. |
 | **Thematic Indices** | Professionally curated collections for stylistic environment extensions (e.g., Sci-Fi, Minimal). |
 | **Hardware Alignment** | CSS3 Grid/Flexbox architecture optimized for **100vh Workstation Stability**. |
@@ -92,7 +92,7 @@ CLAUDE-SPINNER-WORDS/
 ├── themes/                              # 35+ Stylistic environment extensions
 ├── scripts/                             # Implementation & automation tools (apply.ps1, etc.)
 │
-├── Source Code/                         # Integrated technical workstation simulator
+├── Source Code/                         # Integrated technical workstation
 │   ├── js/                              # Modular logic & verb registries
 │   ├── css/                             # Hardware-accelerated design system
 │   └── index.html                       # Simulator entrance & bootstrap index
@@ -118,7 +118,7 @@ CLAUDE-SPINNER-WORDS/
   <img src="screenshots/social_preview.png" alt="Social Identity" width="90%">
   <br><br><br>
 
-  <b>Workstation Simulator Interface</b>
+  <b>Technical Workstation Interface</b>
   <br>
   <i>Production-grade technical emulator featuring hardware-accelerated terminal UI.</i>
   <br><br>
@@ -127,7 +127,7 @@ CLAUDE-SPINNER-WORDS/
 
   <b>Technical Verb Verification</b>
   <br>
-  <i>Real-time cadence analysis of the 90-verb registry within the simulator environment.</i>
+  <i>Real-time cadence analysis of the 90-verb registry within the workstation environment.</i>
   <br><br>
   <img src="screenshots/main_page_2.png" alt="Cadence Analysis" width="90%">
   <br><br><br>
@@ -214,7 +214,7 @@ Eddie-Roommate-Watching
 ## Quick Start
 
 ### 1. Prerequisites
-- **Modern Browser**: Required for running the technical simulator (ES6 support).
+- **Modern Browser**: Required for running the technical workstation (ES6 support).
 - **Claude Code CLI**: The official tool for implementing custom state indicators.
 
 > [!WARNING]
@@ -244,7 +244,7 @@ Execute the provided shell scripts to inject your selected thematic index:
 ```
 
 #### Step 3: Workstation Initialization
-After implementation, you can verify the visual cadence via the simulator:
+After implementation, you can verify the visual cadence via the workstation:
 `Source Code/index.html`
 
 ---
