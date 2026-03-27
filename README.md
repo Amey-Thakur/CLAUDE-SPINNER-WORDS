@@ -190,6 +190,18 @@ Crap-Bag-ing                        Ichiban-Lipstick-For-Men-ing
 Hand-Twins-Matching                 Left-Phalange-Checking
 Paper-Snow-Ghost-ing                Moo-Point-ing
 Whack-Playstation-Sup-ing           Could-I-BE-More-Loading-ing
+Joey-Doesnt-Share-Food-ing          Smell-the-Fart-Acting-ing
+Pivot-Pivot-Pivot-ing               My-Sandwich-ing
+Unagi-ing-Mastery                   Bamboozled-ing-Winning
+Science-Boy-ing-Drawing             I-Knew-It-ing
+Janice-Oh-My-God-ing                Ugly-Naked-Guy-Watching
+Gunther-Coffee-Brewing              Richard-Mustache-Trimming
+Marcel-Monkeying-Around             Mike-Hannigan-Piano-Playing
+Jill-Green-Shopping                 Amy-Green-Babysitting
+Frank-Jr-Triplets-Founding          Ursula-Buffay-Ignoring
+Paulo-Italian-Speaking              Barry-Orthodontist-Dating
+Mona-Picture-Taking                 Tag-Jones-Hiring
+Eddie-Roommate-Watching
 ```
 
 > [!TIP]
