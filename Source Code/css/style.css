@@ -1,0 +1,359 @@
+/**
+ * Filename: style.css
+ * Author: Amey Thakur
+ * GitHub: https://github.com/Amey-Thakur
+ * Repo: https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS
+ * Release Date: 2026-03-26
+ * License: MIT
+ *
+ * Tech Stack: Vanilla CSS, CSS3 Flexbox/Grid
+ *
+ * Description: 
+ * Symmetrical architecture for the high-fidelity Claude simulator.
+ * Synchronizes header and terminal widths for peak visual stability.
+ * Features grand-scale typography and intensified technical spacing.
+ */
+
+:root {
+    --bg-color: #141413;
+    --text-primary: #F4F3EE;
+    --accent-color: #D97757;
+    --text-secondary: rgba(244, 243, 238, 0.4);
+    --code-bg: #0D0D0C;
+    --border-color: rgba(244, 243, 238, 0.08);
+    --terminal-green: #27c93f;
+    --terminal-amber: #ffbd2e;
+    --terminal-red: #ff5f56;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 2vh 40px;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Symmetrical Wrapper Architecture */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+    /* Intensified Spacing */
+    z-index: 10;
+    width: 100%;
+    max-width: 950px;
+    /* Synchronized Symmetrical Width */
+}
+
+/* Grand-Scale Header Branding */
+.header-branding {
+    width: 100%;
+    /* Symmetrical Alignment */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: flex-start;
+    /* Technical CLI alignment */
+    margin-bottom: 1.5vh;
+}
+
+.branding-logo {
+    width: clamp(70px, 9vh, 110px);
+    height: clamp(70px, 9vh, 110px);
+    flex-shrink: 0;
+}
+
+.branding-logo svg path {
+    fill: var(--accent-color);
+}
+
+.title-group {
+    text-align: left;
+}
+
+.repo-title {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(38px, 6vh, 76px);
+    /* Grand-Scale Typography */
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -3px;
+    color: var(--text-primary);
+    line-height: 0.9;
+}
+
+.repo-title span {
+    font-weight: 300;
+    color: var(--accent-color);
+    opacity: 0.95;
+}
+
+.tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(12px, 1.5vh, 18px);
+    /* Intensified Tagline */
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: var(--text-secondary);
+    margin: 12px 0 0 0;
+}
+
+/* Unified Symmetrical Terminal UI */
+.terminal-window {
+    width: 100%;
+    /* Matches Header Max-Width */
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 50px 140px rgba(0, 0, 0, 0.9);
+    position: relative;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: #1A1A19;
+    display: flex;
+    gap: 12px;
+    padding: 15px 25px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.dot.red {
+    background-color: var(--terminal-red);
+}
+
+.dot.yellow {
+    background-color: var(--terminal-amber);
+}
+
+.dot.green {
+    background-color: var(--terminal-green);
+}
+
+/* Simulation Area - Technical Fidelity */
+.terminal-body {
+    padding: clamp(30px, 4.5vh, 65px);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    position: relative; /* Anchor for internal loader */
+}
+
+/* Internal Terminal Loader - Technical Boot Sequence */
+.terminal-loader {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--code-bg);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    opacity: 1;
+    transition: opacity 0.6s ease-out, visibility 0.6s;
+    pointer-events: none;
+}
+
+.terminal-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-logo {
+    width: 120px;
+    height: 120px;
+    animation: loaderRotate 2.5s infinite linear;
+}
+
+@keyframes loaderRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.loader-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: var(--accent-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.ascii-logo {
+    color: var(--accent-color);
+    font-size: clamp(12px, 1.5vh, 22px); /* Corrected enlargement */
+    line-height: 1.1;
+    white-space: pre;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 15px rgba(217, 119, 87, 0.3));
+}
+
+.cli-prompt {
+    font-size: clamp(18px, 2.2vh, 28px); /* Corrected enlargement */
+    margin-bottom: 1.5vh;
+}
+
+.cli-prompt span.prompt {
+    color: var(--terminal-green);
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+.cli-prompt span.command {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.simulation-container {
+    padding: 3.5vh 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px dashed rgba(255, 255, 255, 0.04);
+}
+
+.claude-spinner-root {
+    width: clamp(58px, 8vh, 92px); /* Symmetrical enlargement */
+    height: clamp(58px, 8vh, 92px);
+    animation: claudeSyncPulse 2.4s infinite ease-in-out;
+}
+
+.claude-spinner-root path {
+    fill: var(--accent-color);
+}
+
+@keyframes claudeSyncPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(0.85);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.feedback-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+.verb-text {
+    font-size: clamp(30px, 4.8vh, 62px); /* Corrected enlargement */
+    font-weight: 400;
+    color: #FFF;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+
+.dots {
+    font-size: clamp(30px, 4.8vh, 62px);
+    color: var(--text-secondary);
+}
+
+.cursor {
+    width: 3px;
+    height: clamp(30px, 4.8vh, 62px);
+    background-color: var(--accent-color);
+    margin-left: 10px;
+    animation: blink 1s infinite step-end;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* CRT Aesthetic Overlay */
+.terminal-window::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.015) 50%, transparent 50%);
+    background-size: 100% 4px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+footer {
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.background-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 60px;
+    font-size: clamp(10px, 1.5vh, 18px);
+    color: rgba(244, 243, 238, 0.015);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.glow-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 800px;
+    background: radial-gradient(circle, rgba(217, 119, 87, 0.05) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}

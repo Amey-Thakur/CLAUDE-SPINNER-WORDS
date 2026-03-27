@@ -1,0 +1,21 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "name": "Claude Spinner Words",
+  "runtimePlatform": "Claude Code CLI",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Amey",
+      "familyName": "Thakur",
+      "id": "https://orcid.org/0000-0001-5644-1575"
+    }
+  ],
+  "description": "A comprehensive configuration registry and automated implementation suite for customizing Claude Code spinner verbs.",
+  "programmingLanguage": [
+    "JSON",
+    "PowerShell",
+    "Bash"
+  ]
+}

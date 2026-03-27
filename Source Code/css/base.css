@@ -1,0 +1,68 @@
+/**
+ * Filename: base.css
+ * Author: Amey Thakur
+ * GitHub: https://github.com/Amey-Thakur
+ * Repository: https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS
+ * Release Date: 2026-03-26
+ * License: MIT
+ *
+ * Tech Stack: Vanilla CSS3
+ *
+ * Description: 
+ * Configuration tokens and foundational styles for the Claude Spinner Words registry.
+ */
+
+:root {
+    --bg-color: #1A1A19;
+    --text-primary: #F4F3EE;
+    --accent-color: #D97757;
+    --text-secondary: rgba(244, 243, 238, 0.4);
+    --code-bg: #0D0D0C;
+    --border-color: rgba(244, 243, 238, 0.08);
+    --terminal-green: #27c93f;
+    --terminal-amber: #ffbd2e;
+    --terminal-red: #ff5f56;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 3vh 40px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.glow-overlay {
+    position: absolute;
+    top: 50%; left: 50%; width: 100%; max-width: 800px; height: 100%; max-height: 800px;
+    background: radial-gradient(circle, rgba(217, 119, 87, 0.05) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.background-grid {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-items: center; align-items: center;
+    padding: 60px;
+    font-size: clamp(10px, 1.5vh, 18px);
+    color: rgba(244, 243, 238, 0.04);
+    pointer-events: none;
+    z-index: 0;
+}

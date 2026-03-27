@@ -1,0 +1,53 @@
+# CLAUDE-SPINNER-WORDS
+# Exclusion patterns for local development and system-generated artifacts
+
+# System files
+[Tt]humbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Environment and workspace configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.gemini/
+.agents/
+.agent/
+_agents/
+_agent/
+
+# Dependency and build directories
+node_modules/
+dist/
+build/
+.env
+.npm
+.eslintcache
+
+# Temporary and log files
+Source Code/temp/
+Source Code/logs/
+scripts/logs/
+*.tmp
+*.log
+*.bak
+*.sav
+*.old
+tmp/
+C:/Users/AMEY THAKUR/.gemini/antigravity/brain/503f1564-cbdf-47a4-bdb2-d8a3923efb25/
+
+# Documentation and archive artifacts
+README.md.bak
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Local branding assets (local-only screenshots/previews if any)
+screenshots/
+assets/*.png.bak
+assets/*.webp
+assets/*.webp.bak
+!assets/favicon.svg

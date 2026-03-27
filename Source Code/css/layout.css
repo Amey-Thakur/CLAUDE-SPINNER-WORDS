@@ -1,0 +1,75 @@
+/**
+ * Filename: layout.css
+ * Author: Amey Thakur
+ * GitHub: https://github.com/Amey-Thakur
+ * Repository: https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS
+ * Release Date: 2026-03-26
+ * License: MIT
+ *
+ * Tech Stack: CSS3 Flexbox/Grid
+ *
+ * Description: 
+ * Branded layout architecture and viewport positioning for the simulator workspace.
+ */
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    z-index: 10;
+    width: 100%;
+    max-width: 950px;
+}
+
+.header-branding {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: flex-start;
+    margin-bottom: 1.5vh;
+}
+
+.branding-logo {
+    width: clamp(70px, 9vh, 110px);
+    height: clamp(70px, 9vh, 110px);
+    flex-shrink: 0;
+}
+.branding-logo svg path { fill: var(--accent-color); }
+
+.title-group { text-align: left; }
+
+.repo-title {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(38px, 6vh, 76px);
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -3px;
+    color: var(--text-primary);
+    line-height: 0.9;
+}
+.repo-title span { font-weight: 300; color: var(--accent-color); opacity: 0.95; }
+
+.tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(12px, 1.5vh, 18px);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    color: var(--text-secondary);
+    margin: 12px 0 0 0;
+}
+
+footer {
+    margin-top: 4vh;
+    text-align: center;
+    font-size: clamp(16px, 2vh, 22px);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 1px;
+}
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
+}

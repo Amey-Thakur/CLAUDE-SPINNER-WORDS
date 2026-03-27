@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Filename: banner_template.html
+    Author: Amey Thakur
+    GitHub: https://github.com/Amey-Thakur
+    Repository: https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS
+    Release Date: 2026-03-26
+    License: MIT
+
+    Tech Stack: HTML5, CSS3 (Technical Orchestration)
+
+    Description: 
+    High-fidelity workstation banner for project identification. 
+    Calibrated for 1280x640 resolution with symmetrical technical indicators.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Spinner Words | Technical Workstation Banner</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+        :root {
+            --bg-color: #1A1A19;
+            --text-primary: #F4F3EE;
+            --accent-color: #D97757;
+            --text-secondary: rgba(244, 243, 238, 0.4);
+            --code-bg: #0D0D0C;
+            --border-color: rgba(244, 243, 238, 0.08);
+            --terminal-green: #27c93f;
+            --terminal-amber: #ffbd2e;
+            --terminal-red: #ff5f56;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            width: 1280px;
+            height: 640px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            border: 4px solid var(--accent-color); /* Workarea Outline - DO NOT REMOVE */
+        }
+
+        /* Asset: background-grid alignment */
+        .grid-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: linear-gradient(var(--border-color) 1px, transparent 1px), 
+                              linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+            background-size: 100px 100px;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .background-verbs {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            justify-items: center; align-items: center;
+            padding: 40px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: rgba(217, 119, 87, 0.1); /* Accent-tinted verbs */
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 45px;
+            z-index: 10;
+            width: 100%;
+        }
+
+        /* Branding: Symmetrical alignment */
+        .branding-header {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            width: 950px;
+            justify-content: flex-start;
+        }
+
+        .logo-mark {
+            width: 100px;
+            height: 100px;
+            flex-shrink: 0;
+        }
+        .logo-mark svg path { fill: var(--accent-color); }
+
+        .title-group { text-align: left; }
+
+        .repo-title {
+            font-size: 80px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: -3px;
+            line-height: 0.9;
+        }
+        .repo-title span { font-weight: 300; color: var(--accent-color); opacity: 0.9; }
+
+        .tagline {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 7px;
+            color: var(--text-secondary);
+            margin: 8px 0 0 0;
+        }
+
+        /* Component: Terminal representation */
+        .terminal-frame {
+            width: 950px;
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .terminal-top-bar {
+            background: #1A1A19;
+            display: flex;
+            gap: 10px;
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .dot { width: 12px; height: 12px; border-radius: 50%; opacity: 0.6; }
+        .dot.red { background-color: var(--terminal-red); }
+        .dot.yellow { background-color: var(--terminal-amber); }
+        .dot.green { background-color: var(--terminal-green); }
+
+        .terminal-content {
+            padding: 35px 45px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 22px;
+            line-height: 1.5;
+            position: relative;
+        }
+
+        .cli-line { margin-bottom: 8px; }
+        .prompt { color: var(--terminal-green); font-weight: 700; margin-right: 15px; }
+        .command { color: rgba(255, 255, 255, 0.5); }
+        .sim-ver { color: #FFF; border-bottom: 2px solid var(--accent-color); padding-bottom: 2px; }
+
+        /* Effects: CRT scanline visibility */
+        .terminal-frame::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0.01) 50%, transparent 50%);
+            background-size: 100% 4px;
+            pointer-events: none;
+            z-index: 5;
+        }
+        .footer-credits {
+            position: absolute;
+            bottom: 35px;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.4);
+            z-index: 15;
+            text-align: center;
+            width: 100%;
+        }
+        .footer-credits span { color: var(--accent-color); }
+        .footer-credits {
+            position: absolute;
+            bottom: 35px;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.4);
+            z-index: 15;
+            text-align: center;
+            width: 100%;
+        }
+        .footer-credits span { color: var(--accent-color); }
+    </style>
+</head>
+<body>
+    <div class="grid-bg"></div>
+    <div class="background-verbs">
+        <span>Accomplishing</span><span>Booping</span><span>Brewing</span><span>Clauding</span><span>Cogitating</span><span>Cooking</span><span>Crunching</span><span>Deciphering</span><span>Doing</span><span>Effecting</span>
+        <span>Finagling</span><span>Forging</span><span>Generating</span><span>Hatching</span><span>Honking</span><span>Ideating</span><span>Incubating</span><span>Jiving</span><span>Manifesting</span><span>Mulling</span>
+        <span>Musing</span><span>Noodling</span><span>Perusing</span><span>Pondering</span><span>Processing</span><span>Puzzling</span><span>Reticulating</span><span>Scheming</span><span>Sussing</span><span>Thinking</span>
+        <span>Tinkering</span><span>Vibing</span><span>Whirring</span><span>Wizarding</span><span>Working</span><span>Wrangling</span><span>Unfurling</span><span>Spelunking</span><span>Simmering</span><span>Actualizing</span>
+        <span>Cerebrating</span><span>Coalescing</span><span>Combobulating</span><span>Conjuring</span><span>Considering</span><span>Contemplating</span><span>Crafting</span><span>Determining</span><span>Elucidating</span><span>Enchanting</span>
+        <span>Envisioning</span><span>Forming</span><span>Germinating</span><span>Hustling</span><span>Imagining</span><span>Inferring</span><span>Marinating</span><span>Meandering</span><span>Mustering</span><span>Percolating</span>
+        <span>Pontificating</span><span>Puttering</span><span>Ruminating</span><span>Schlepping</span><span>Shimmying</span><span>Shucking</span><span>Smooshing</span><span>Spinning</span><span>Stewing</span><span>Synthesizing</span>
+        <span>Transmuting</span><span>Unravelling</span><span>Wandering</span><span>Wibbling</span><span>Actioning</span><span>Baking</span><span>Calculating</span><span>Channelling</span><span>Churning</span><span>Computing</span>
+    </div>
+
+    <div class="main-container">
+        <header class="branding-header">
+            <div class="logo-mark">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.709 15.955l4.72-2.647.08-.23-.08-.128H9.2l-.79-.048-2.698-.073-2.339-.097-2.266-.122-.571-.121L0 11.784l.055-.352.48-.321.686.06 1.52.103 2.278.158 1.652.097 2.449.255h.389l.055-.157-.134-.098-.103-.097-2.358-1.596-2.552-1.688-1.336-.972-.724-.491-.364-.462-.158-1.008.656-.722.881.06.225.061.893.686 1.908 1.476 2.491 1.833.365.304.145-.103.019-.073-.164-.274-1.355-2.446-1.446-2.49-.644-1.032-.17-.619a2.97 2.97 0 01-.104-.729L6.283.134 6.696 0l.996.134.42.364.62 1.414 1.002 2.229 1.555 3.03.456.898.243.832.091.255h.158V9.01l.128-1.706.237-2.095.23-2.695.08-.76.376-.91.747-.492.584.28.48.685-.067.444-.286 1.851-.559 2.903-.364 1.942h.212l.243-.242.985-1.306 1.652-2.064.73-.82.85-.904.547-.431h1.033l.76 1.129-.34 1.166-1.064 1.347-.881 1.142-1.264 1.7-.79 1.36.073.11.188-.02 2.856-.606 1.543-.28 1.841-.315.833.388.091.395-.328.807-1.969.486-2.309.462-3.439.813-.042.03.049.061 1.549.146.662.036h1.622l3.02.225.79.522.474.638-.079.485-1.215.62-1.64-.389-3.829-.91-1.312-.329h-.182v.11l1.093 1.068 2.006 1.81 2.509 2.33.127.578-.322.455-.34-.049-2.205-1.657-.851-.747-1.926-1.62h-.128v.17l.444.649 2.345 3.521.122 1.08-.17.353-.608.213-.668-.122-1.374-1.925-1.415-2.167-1.143-1.943-.14.08-.674 7.254-.316.37-.729.28-.607-.461-.322-.747.322-1.476.389-1.924.315-1.53.286-1.9.17-.632-.012-.042-.14.018-1.434 1.967-2.18 2.945-1.726 1.845-.414.164-.717-.37.067-.662.401-.589 2.388-3.036 1.44-1.882.93-1.086-.006-.158h-.055L4.132 18.56l-1.13.146-.487-.456.061-.746.231-.243 1.908-1.312-.006.006z" />
+                </svg>
+            </div>
+            <div class="title-group">
+                <h1 class="repo-title">Claude <span>Spinner Words</span></h1>
+                <p class="tagline">Sovereign State Indicator Registry</p>
+            </div>
+        </header>
+
+        <article class="terminal-frame">
+            <div class="terminal-top-bar">
+                <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+            </div>
+            <div class="terminal-content">
+                <div class="cli-line"><span class="prompt">></span> <span class="command">claude --status --registry</span></div>
+                <div class="cli-line">Searching 90 verified indicator states...</div>
+                <div class="cli-line" style="margin-top: 15px;">
+                    <span style="color: var(--accent-color); font-weight: 700;">CURRENT STATE:</span> <span class="sim-ver">Flibbertigibbeting</span>...
+                </div>
+            </div>
+        </article>
+
+        <div class="footer-credits">
+            Designed & Developed by <span>Amey Thakur</span>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

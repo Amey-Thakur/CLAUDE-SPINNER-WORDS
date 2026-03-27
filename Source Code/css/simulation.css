@@ -1,0 +1,69 @@
+/**
+ * Filename: simulation.css
+ * Author: Amey Thakur
+ * GitHub: https://github.com/Amey-Thakur
+ * Repository: https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS
+ * Release Date: 2026-03-26
+ * License: MIT
+ *
+ * Tech Stack: CSS3 Animations
+ *
+ * Description: 
+ * Visual simulation components, including the starburst spinner, typewriter verbs, and cursor animations.
+ */
+
+.simulation-container {
+    padding: 3.5vh 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px dashed rgba(255, 255, 255, 0.04);
+}
+
+.claude-spinner-root {
+    width: clamp(58px, 8vh, 92px);
+    height: clamp(58px, 8vh, 92px);
+    animation: claudeSyncPulse 2.4s infinite ease-in-out;
+}
+.claude-spinner-root path { fill: var(--accent-color); }
+
+@keyframes claudeSyncPulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(0.85); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.feedback-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+.verb-text {
+    font-size: clamp(30px, 4.8vh, 62px);
+    font-weight: 400;
+    color: #FFF;
+    letter-spacing: -1.5px;
+    line-height: 1;
+}
+
+.dots {
+    font-size: clamp(30px, 4.8vh, 62px);
+    color: var(--text-secondary);
+}
+
+.cursor {
+    width: 3px;
+    height: clamp(30px, 4.8vh, 62px);
+    background-color: var(--accent-color);
+    margin-left: 10px;
+    animation: blink 1s infinite step-end;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}

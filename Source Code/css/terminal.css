@@ -1,0 +1,71 @@
+/**
+ * Filename: terminal.css
+ * Author: Amey Thakur
+ * GitHub: https://github.com/Amey-Thakur
+ * Repository: https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS
+ * Release Date: 2026-03-26
+ * License: MIT
+ *
+ * Tech Stack: Vanilla CSS3
+ *
+ * Description: 
+ * Terminal UI components, command-line interface logs, and technical scanline effects.
+ */
+
+.terminal-window {
+    width: 100%;
+    background-color: var(--code-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 50px 140px rgba(0, 0, 0, 0.9);
+    position: relative;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: #1A1A19;
+    display: flex;
+    gap: 12px;
+    padding: 15px 25px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dot { width: 14px; height: 14px; border-radius: 50%; }
+.dot.red { background-color: var(--terminal-red); }
+.dot.yellow { background-color: var(--terminal-amber); }
+.dot.green { background-color: var(--terminal-green); }
+
+.terminal-body {
+    padding: clamp(30px, 4.5vh, 65px);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    position: relative;
+}
+
+.ascii-logo {
+    color: var(--accent-color);
+    font-size: clamp(12px, 1.5vh, 22px);
+    line-height: 1.1;
+    white-space: pre;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 15px rgba(217, 119, 87, 0.3));
+}
+
+.cli-prompt {
+    font-size: clamp(18px, 2.2vh, 28px);
+    margin-bottom: 1.5vh;
+}
+.cli-prompt .prompt { color: var(--terminal-green); font-weight: 700; margin-right: 12px;}
+.cli-prompt .command { color: rgba(255, 255, 255, 0.4); }
+
+.terminal-window::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.015) 50%, transparent 50%);
+    background-size: 100% 4px;
+    z-index: 10;
+    pointer-events: none;
+}

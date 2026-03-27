@@ -1,0 +1,89 @@
+/**
+ * Filename: 404.css
+ * Author: Amey Thakur
+ * GitHub: https://github.com/Amey-Thakur
+ * Repository: https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS
+ * Release Date: 2026-03-26
+ * License: MIT
+ *
+ * Tech Stack: Vanilla CSS3
+ *
+ * Description: 
+ * Layout and typography overrides for the terminal fallback state.
+ */
+
+.terminal-404-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: clamp(20px, 2.5vh, 50px);
+    text-align: left;
+    gap: 1.5vh;
+    overflow: hidden;
+}
+
+.ascii-404 {
+    color: var(--accent-color);
+    font-size: clamp(10px, 1.4vh, 18px);
+    line-height: 1.1;
+    white-space: pre;
+    margin-bottom: 2.2vh;
+    filter: drop-shadow(0 0 15px rgba(217, 119, 87, 0.25));
+}
+
+.terminal-log {
+    font-size: clamp(18px, 2vh, 28px);
+    line-height: 1.4;
+    margin-bottom: 1vh;
+}
+
+.log-entry {
+    display: block;
+    margin-bottom: 0.5vh;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.log-entry .label {
+    font-weight: 700;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.log-entry.warn { color: var(--terminal-amber); }
+.log-entry.warn .label { color: var(--terminal-amber); opacity: 0.5; }
+
+.log-entry.error { color: var(--terminal-red); }
+.log-entry.error .label { color: var(--terminal-red); opacity: 0.5; }
+
+.simulation-container-404 {
+    padding: 1.2vh 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px dashed rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    width: fit-content;
+    margin: 0.5vh 0;
+}
+
+.recovery-btn {
+    background: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 12px 40px;
+    font-size: clamp(18px, 2vh, 24px);
+    border-radius: 4px;
+    text-decoration: none;
+    width: fit-content;
+    transition: all 0.2s ease;
+    margin-top: 1.5vh;
+    display: inline-block;
+}
+
+.recovery-btn:hover {
+    background: var(--accent-color);
+    color: #000;
+    box-shadow: 0 0 20px rgba(217, 119, 87, 0.4);
+}

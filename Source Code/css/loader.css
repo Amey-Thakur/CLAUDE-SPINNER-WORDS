@@ -1,0 +1,57 @@
+/**
+ * Filename: loader.css
+ * Author: Amey Thakur
+ * GitHub: https://github.com/Amey-Thakur
+ * Repository: https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS
+ * Release Date: 2026-03-26
+ * License: MIT
+ *
+ * Tech Stack: CSS3 Transitions
+ *
+ * Description: 
+ * Preliminary terminal loading sequence and technical status animations.
+ */
+
+.terminal-loader {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--code-bg);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    opacity: 1;
+    transition: opacity 0.6s ease-out, visibility 0.6s;
+    pointer-events: none;
+}
+
+.terminal-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-logo {
+    width: 120px;
+    height: 120px;
+    animation: loaderRotate 2.5s infinite linear;
+}
+
+@keyframes loaderRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.loader-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.loader-percent {
+    color: #27c93f; /* Terminal Green synchronization */
+    font-weight: 700;
+}
