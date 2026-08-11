@@ -1,12 +1,11 @@
 <div align="center">
 
-  <a name="readme-top"></a>
   # <a href="https://amey-thakur.github.io/CLAUDE-SPINNER-WORDS/"><img src="Source Code/assets/favicon.svg" width="32" height="32" title="Claude Spinner Words | Technical Workstation Registry"></a> Claude Spinner Words
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
-  ![Status](https://img.shields.io/badge/Status-Completed-success)
-  [![Technology](https://img.shields.io/badge/Technology-Vanilla%20JS%20%7C%20CSS3-blueviolet)](https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS)
-  [![Developed by Amey Thakur](https://img.shields.io/badge/Developed%20by-Amey%20Thakur-blue.svg)](https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS)
+  ![Status](https://img.shields.io/badge/Status-Completed-2EA043)
+  [![Technology](https://img.shields.io/badge/Technology-Vanilla%20JS%20%7C%20CSS3-8250DF)](https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS)
+  [![Developed by Amey Thakur](https://img.shields.io/badge/Developed%20by-Amey%20Thakur-0969DA.svg)](https://github.com/Amey-Thakur/CLAUDE-SPINNER-WORDS)
 
   Autonomous technical registry and configuration workstation for the Claude Code CLI state indicator mechanism.
 
@@ -36,7 +35,7 @@
   <a name="author"></a>
   ## Author
 
-| <a href="https://github.com/Amey-Thakur"><img src="https://github.com/Amey-Thakur.png" width="150" height="150" alt="Amey Thakur"></a><br>[**Amey Thakur**](https://github.com/Amey-Thakur)<br><br>[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--5644--1575-green.svg)](https://orcid.org/0000-0001-5644-1575) |
+| <a href="https://github.com/Amey-Thakur"><img src="https://github.com/Amey-Thakur.png" width="150" height="150" alt="Amey Thakur"></a><br>[**Amey Thakur**](https://github.com/Amey-Thakur)<br><br>[![ORCID](https://img.shields.io/badge/ORCID-0000--0001--5644--1575-A6CE39.svg)](https://orcid.org/0000-0001-5644-1575) |
 | :---: |
 
 </div>
@@ -335,7 +334,7 @@ I was intrigued by how Claude 'thinks' and the unique words it uses while workin
 
 <div align="center">
 
-  [↑ Back to Top](#readme-top)
+  [↑ Back to Top](#-claude-spinner-words)
 
   [Author](#author) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [Features](#features) &nbsp;·&nbsp; [Structure](#project-structure) &nbsp;·&nbsp; [Results](#results) &nbsp;·&nbsp; [Registry](#indicator-registry) &nbsp;·&nbsp; [Quick Start](#quick-start) &nbsp;·&nbsp; [License](#license) &nbsp;·&nbsp; [Contributing](#contributing) &nbsp;·&nbsp; [Usage Guidelines](#usage-guideline) &nbsp;·&nbsp; [About](#about-this-repository)
 
@@ -344,3 +343,4 @@ I was intrigued by how Claude 'thinks' and the unique words it uses while workin
   <a href="https://amey-thakur.github.io/CLAUDE-SPINNER-WORDS/"><img src="Source Code/assets/favicon.svg" width="24" height="24" title="Claude Spinner Words | Global Entrance"></a> **[Claude Spinner Words](https://amey-thakur.github.io/CLAUDE-SPINNER-WORDS/)**
 
 </div>
+
